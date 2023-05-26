@@ -29,6 +29,7 @@ jobs:
 
     - name: Generate Diagrams In Markdown Files
       run: |
+        mkdir docs
         cd docs
         for file in $(find . -name '*.md'); do
           [ -f "$file" ] || continue
